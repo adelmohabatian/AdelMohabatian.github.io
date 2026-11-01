@@ -1,0 +1,75 @@
+name: Deploy WebSocial ZIP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'releases/site.zip'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Validate and unpack release archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import stat, zipfile
+          archive = Path('releases/site.zip')
+          if not archive.is_file():
+              raise SystemExit('Missing releases/site.zip')
+          destination = Path('site')
+          destination.mkdir(exist_ok=True)
+          with zipfile.ZipFile(archive) as z:
+              entries = z.infolist()
+              if len(entries) > 500:
+                  raise SystemExit('Too many archive entries')
+              total = 0
+              for info in entries:
+                  path = PurePosixPath(info.filename)
+                  if path.is_absolute() or '..' in path.parts or '\\' in info.filename or not path.parts:
+                      raise SystemExit(f'Unsafe path: {info.filename}')
+                  if path.parts[0] in {'.git', '.github'}:
+                      raise SystemExit(f'Forbidden path: {info.filename}')
+                  mode = (info.external_attr >> 16)
+                  if stat.S_ISLNK(mode):
+                      raise SystemExit(f'Symlink forbidden: {info.filename}')
+                  if info.file_size > 30 * 1024 * 1024:
+                      raise SystemExit(f'Oversized file: {info.filename}')
+                  total += info.file_size
+                  if total > 150 * 1024 * 1024:
+                      raise SystemExit('Archive too large when extracted')
+              if 'index.html' not in z.namelist():
+                  raise SystemExit('Archive must have index.html at its root')
+              z.extractall(destination)
+          if not (destination / 'index.html').is_file():
+              raise SystemExit('No index.html after extraction')
+          print(f'Validated {len(entries)} archive entries')
+          PY
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
