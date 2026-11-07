@@ -1,0 +1,22 @@
+/* WebSocial v3.3: monochrome editorial refinement */
+:root{--ws-ink:#192A34;--ws-muted:#526570;--ws-line:#d1dadd}
+html{font-size:15px}
+body{font-size:1rem;line-height:1.7}
+body p{line-height:1.8}
+.wrap{max-width:1010px}
+h1{font-size:clamp(1.85rem,3.5vw,3.05rem)!important;line-height:1.25!important;letter-spacing:-.015em}
+h2,.ws-section h2{font-size:clamp(1.35rem,2.3vw,1.85rem)!important;line-height:1.4!important;letter-spacing:0!important}
+h3{font-size:clamp(1.04rem,1.4vw,1.2rem)}
+.hero{padding-top:48px;padding-bottom:28px}
+.section{padding-top:19px;padding-bottom:19px}
+.eyebrow,.ws-kicker,.ws-meta{font-size:.72rem!important;letter-spacing:.055em!important}
+.editorial-lead,.ws-short{font-size:1rem!important;line-height:1.8!important}
+nav{font-size:.88rem;gap:15px}
+.ws-related-grid a,.editorial-action,.ws-textlink,.project-link{font-weight:500!important;font-size:.91rem!important}
+.ws-related-grid a{padding:12px 0!important}
+.ws-number{font-size:clamp(2.4rem,5vw,4.4rem)!important;opacity:.65}
+.ws-arrow-icon{display:inline-block;vertical-align:baseline;flex:none;margin-inline-start:.38em;color:var(--ws-ink);width:.72em;height:.72em}
+.ws-arrow-icon svg{width:100%;height:100%;display:block;stroke:currentColor;stroke-width:1.65;fill:none;stroke-linecap:round;stroke-linejoin:round}
+a:hover .ws-arrow-icon{transform:translate(1px,-1px)}
+@media(max-width:720px){html{font-size:14px}.wrap{padding-inline:20px}.hero{padding-top:28px;padding-bottom:24px}h1{font-size:clamp(1.8rem,7vw,2.35rem)!important}h2,.ws-section h2{font-size:clamp(1.3rem,5.2vw,1.7rem)!important}.ws-number{display:none!important}nav{font-size:.83rem;gap:11px}.ws-section{padding-block:27px!important}}
+@media(prefers-reduced-motion:reduce){a .ws-arrow-icon{transition:none}}

@@ -1,0 +1,9 @@
+/* WebSocial v3.6: official emblem, responsive and unobtrusive */
+.ws-shell-brand,header .brand{display:inline-flex!important;align-items:center!important;gap:8px!important;min-width:0;text-decoration:none}
+.ws-brand-emblem{display:block!important;width:32px!important;height:32px!important;flex:0 0 32px!important;object-fit:contain!important;vertical-align:middle}
+@media(max-width:520px){.ws-brand-emblem{width:25px!important;height:25px!important;flex-basis:25px!important}.ws-shell-brand{gap:5px!important;max-width:49%!important;font-size:clamp(8px,2.3vw,11px)!important;letter-spacing:0!important}.ws-shell-row{gap:5px!important}.ws-shell-section{max-width:23%!important}}
+@media(max-width:365px){.ws-brand-emblem{width:22px!important;height:22px!important;flex-basis:22px!important}.ws-shell-section{max-width:19%!important}}
+
+/* v3.7 duplicate emblem safeguard */
+.ws-shell-brand img.ws-brand-emblem:not(:first-of-type){display:none!important}
+@media(max-width:520px){.ws-shell-brand{max-width:47%!important}.ws-shell-section{max-width:22%!important}}

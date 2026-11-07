@@ -1,0 +1,62 @@
+
+.contact-layout{max-width:760px;padding-top:clamp(55px,8vw,105px);padding-bottom:80px}
+.contact-kicker{color:#59717B;font-size:11px;letter-spacing:.17em;font-weight:700}
+.contact-layout h1{font-size:clamp(48px,8vw,82px);line-height:1.1;margin:14px 0 22px;letter-spacing:-.04em;color:#192A34}
+.contact-lede{max-width:620px;font-size:clamp(17px,2vw,21px);line-height:1.7;color:#415764;margin-bottom:38px}
+.minimal-contact-form{display:grid;gap:22px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}.field{display:flex;flex-direction:column;gap:9px}
+.field label{font-size:13px;font-weight:600;color:#192A34}.field input,.field textarea{box-sizing:border-box;width:100%;border:1px solid #bdcbd0;border-radius:3px;background:#fff;color:#192A34;padding:14px 15px;font:inherit;font-size:16px;line-height:1.5;transition:border-color .15s,box-shadow .15s}
+.field textarea{resize:vertical;min-height:150px}.field input:focus-visible,.field textarea:focus-visible{outline:2px solid #59717B;outline-offset:2px;border-color:#59717B}
+.field input::placeholder,.field textarea::placeholder{color:#829299}.form-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.form-actions button{background:#192A34;border:1px solid #192A34;color:white;border-radius:3px;padding:14px 29px;font:inherit;font-weight:600;cursor:pointer}.form-actions button:hover,.form-actions button:focus-visible{background:#304d5d}.form-actions p{font-size:12px;line-height:1.6;color:#647985;max-width:340px;margin:0}
+.contact-quiet{border-top:1px solid #d3dfe2;margin-top:48px;padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:13px;color:#59717B}.contact-quiet a{color:#192A34;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.social-quiet{display:flex;gap:14px;align-items:center;margin-top:25px}.social-icon{color:#59717B;display:inline-flex;align-items:center;justify-content:center;width:30px;height:32px;border-radius:3px}.social-icon:hover,.social-icon:focus-visible{color:#192A34;background:#e2eaed}.social-icon svg{width:19px;height:19px}
+.honeypot{position:absolute!important;left:-9999px!important;opacity:0!important;width:1px!important;height:1px!important;pointer-events:none!important}
+html[dir=rtl] .contact-kicker{letter-spacing:0}html[dir=rtl] .contact-layout h1{letter-spacing:0}
+@media(max-width:620px){.form-row{grid-template-columns:1fr;gap:22px}.contact-layout{padding-top:45px}.form-actions{align-items:stretch;flex-direction:column;gap:12px}.form-actions button{width:100%}}
+
+/* WebSocial v2.4: stable bilingual form layout */
+.contact-layout, .minimal-contact-form { min-width:0; }
+html[dir="rtl"] .contact-layout, html[dir="rtl"] .minimal-contact-form { direction:rtl; text-align:right; }
+html[dir="rtl"] .contact-layout h1 { line-height:1.35; }
+html[dir="rtl"] .field label,html[dir="rtl"] .field input,html[dir="rtl"] .field textarea { text-align:right; }
+.field input[type="email"] {direction:ltr!important;text-align:left!important;unicode-bidi:plaintext;}
+html[dir="rtl"] .contact-quiet { direction:rtl; }
+html[dir="rtl"] .contact-quiet a {direction:ltr;unicode-bidi:isolate;}
+html[dir="rtl"] .social-quiet {justify-content:flex-start;}
+@media(max-width:420px){.contact-layout{padding-left:18px;padding-right:18px}.contact-layout h1{font-size:46px}.contact-lede{font-size:16px}.field input,.field textarea{min-width:0}}
+
+/* v2.5: original portrait, responsive split composition */
+.contact-layout{max-width:1180px;display:grid;grid-template-columns:minmax(280px,.82fr) minmax(0,1fr);align-items:start;column-gap:clamp(36px,6vw,100px);padding-top:clamp(35px,6vw,80px)}
+.contact-portrait{margin:0;min-width:0;position:sticky;top:30px}
+.contact-portrait img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;filter:grayscale(1);border-radius:2px}
+.contact-content{min-width:0}.contact-content .contact-lede{font-size:clamp(16px,1.7vw,19px)}
+html[dir=rtl] .contact-layout{direction:rtl}html[dir=rtl] .contact-portrait{grid-column:2;grid-row:1}html[dir=rtl] .contact-content{grid-column:1;grid-row:1;text-align:right}
+html[dir=rtl] label[for=sender-email]{direction:rtl;text-align:right;display:block}html[dir=rtl] #sender-email{direction:ltr;text-align:left}
+@media(max-width:800px){.contact-layout{grid-template-columns:1fr;gap:28px}.contact-portrait{position:static;max-width:380px;width:100%;margin:0 auto}.contact-content{width:100%}html[dir=rtl] .contact-portrait,html[dir=rtl] .contact-content{grid-column:auto;grid-row:auto}}
+
+/* v2.6: compact portrait and language-specific input alignment */
+.contact-layout {grid-template-columns:minmax(0,310px) minmax(0,1fr);gap:clamp(28px,5vw,68px);max-width:1000px;align-items:start;}
+.contact-portrait {position:static;width:100%;max-width:310px;margin:0;}
+.contact-portrait img {width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center center;border-radius:3px;}
+.contact-content {min-width:0;}
+.field input,.field textarea {text-align:left;direction:ltr;}
+html[lang="fa"] .field input:not([type="email"]),html[lang="fa"] .field textarea {text-align:right;direction:rtl;}
+html[lang="fa"] .field input[type="email"] {direction:ltr!important;text-align:right!important;}
+html[lang="en"] .field input[type="email"] {direction:ltr!important;text-align:left!important;}
+html[lang="fa"] .field label {text-align:right;direction:rtl;}
+html[lang="en"] .field label {text-align:left;direction:ltr;}
+@media(max-width:800px){
+ .contact-layout {display:flex;flex-direction:column;align-items:stretch;gap:26px;padding-top:24px;}
+ .contact-portrait {width:min(100%,260px);max-width:260px;margin:0 auto;}
+ .contact-portrait img {aspect-ratio:4/5;}
+ .contact-content {width:100%;}
+}
+@media(max-width:480px){
+ .contact-layout {padding-left:20px;padding-right:20px;gap:20px;}
+ .contact-portrait {width:190px;max-width:190px;}
+ .contact-portrait img {aspect-ratio:1/1;}
+ .contact-layout h1 {font-size:clamp(37px,10vw,46px);margin:10px 0 14px;}
+ .contact-lede {margin-bottom:25px;}
+ .minimal-contact-form {gap:16px;}
+ .form-row {gap:16px;}
+ .field textarea {min-height:128px;}
+}

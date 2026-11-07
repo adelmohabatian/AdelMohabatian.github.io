@@ -1,0 +1,11 @@
+/* WebSocial shared minimalist social footer */
+.ws-social-footer{border-top:1px solid #d4dfe1;margin-top:48px;padding:26px 18px 36px;color:#59717b;background:#f2f5f5}
+.ws-social-inner{max-width:1080px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.ws-social-note{font:12px Arial,Tahoma,sans-serif;letter-spacing:.03em}
+.ws-social-icons{display:flex;align-items:center;gap:6px;direction:ltr;flex-wrap:wrap}
+.ws-social-icons a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;color:#192a34;text-decoration:none;transition:background .2s,color .2s}
+.ws-social-icons a:hover,.ws-social-icons a:focus-visible{background:#dbe4e6;color:#101b21;outline-offset:2px}
+.ws-social-icons svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ws-social-icons .ws-fill{fill:currentColor;stroke:none}
+@media(max-width:580px){.ws-social-inner{justify-content:center;text-align:center}.ws-social-note{width:100%}}
+.ws-episode{max-width:950px;margin:60px auto 85px;padding:0 24px}.ws-episode h1{font-size:clamp(29px,4vw,49px);line-height:1.25;margin:14px 0 22px}.ws-episode p{color:#536b74;line-height:1.9}.ws-video-shell{aspect-ratio:16/9;background:#192a34;position:relative;overflow:hidden;border-radius:3px}.ws-video-shell iframe{width:100%;height:100%;border:0}.ws-video-launch{position:absolute;inset:0;border:0;width:100%;background:linear-gradient(130deg,#1b303b,#445c67);color:white;display:flex;align-items:center;justify-content:center;gap:14px;flex-direction:column;cursor:pointer;font-size:16px}.ws-video-launch:hover{background:linear-gradient(130deg,#182b35,#344e5b)}.ws-video-launch svg{width:58px;height:58px;fill:none;stroke:white;stroke-width:1.5}.ws-video-caption{font-size:12px;color:#667981;margin-top:12px}.ws-episode-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:25px}.ws-episode-links a{color:#192a34;text-underline-offset:4px}.ws-episode-eyebrow{font-size:12px;color:#667981;letter-spacing:.12em;text-transform:uppercase}

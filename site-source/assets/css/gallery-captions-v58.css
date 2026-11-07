@@ -1,0 +1,10 @@
+/* WebSocial v5.8 - bilingual photographic notes, not part of the image stage */
+.ws-photo-viewer .ws-photo-meta{display:flex;flex-direction:column;gap:.35rem;align-items:stretch;padding:14px clamp(5px,2vw,20px) 6px;min-height:2.8rem}
+.ws-photo-viewer .ws-photo-title{font-size:clamp(.96rem,1.65vw,1.14rem);font-weight:600;line-height:1.7;color:#192a34;text-align:start;overflow-wrap:anywhere}
+.ws-photo-viewer .ws-photo-description{margin:0;font-size:clamp(.85rem,1.3vw,.98rem);font-weight:400;color:#425660;line-height:1.9;max-width:78ch;text-align:start;overflow-wrap:anywhere;white-space:pre-line}
+.ws-photo-viewer .ws-photo-description[hidden],.ws-film-viewer .ws-film-note[hidden]{display:none}
+.ws-film-viewer .ws-film-note{font-size:clamp(.84rem,1.25vw,.96rem);line-height:1.85;color:#445761;margin:0 auto;max-width:70ch;overflow-wrap:anywhere;white-space:pre-line;text-align:start}
+.ws-film-viewer .ws-film-caption{gap:7px}
+.ws-photo-meta[dir=rtl],.ws-film-caption[dir=rtl]{direction:rtl;text-align:right}
+.ws-photo-meta[dir=ltr],.ws-film-caption[dir=ltr]{direction:ltr;text-align:left}
+@media(max-width:620px){.ws-photo-viewer .ws-photo-meta{padding:12px 8px 4px}.ws-film-viewer .ws-film-controls{min-height:112px}.ws-film-viewer .ws-film-note{font-size:.86rem}}

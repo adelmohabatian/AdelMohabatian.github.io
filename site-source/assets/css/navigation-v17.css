@@ -1,0 +1,13 @@
+
+.ws-skip{position:absolute;top:-80px;left:12px;z-index:9999;background:#192A34;color:white;padding:10px 16px;border-radius:6px}.ws-skip:focus{top:12px}
+.ws-breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;padding:1.15rem 0 .6rem;font-size:.8rem;color:#59717B;line-height:1.6}
+.ws-breadcrumb a{color:#59717B;text-decoration:none}.ws-breadcrumb a:hover,.ws-breadcrumb a:focus{text-decoration:underline}
+.ws-separator{opacity:.55}
+.ws-related{margin:3.6rem 0 2.4rem;border-top:1px solid #d8e1e4;padding-top:1.6rem}
+.ws-related h2{font-size:1.12rem;font-weight:600;margin:0 0 1rem;color:#192A34}
+.ws-related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}
+.ws-related-grid a{border:1px solid #d8e1e4;padding:.95rem 1rem;text-decoration:none;color:#192A34;border-radius:7px;display:flex;justify-content:space-between;align-items:center;gap:1rem;line-height:1.5}
+.ws-related-grid a:hover,.ws-related-grid a:focus{border-color:#59717B;background:#f2f5f5}
+.ws-title-link{color:inherit;text-decoration:none}.ws-title-link:hover,.ws-title-link:focus{text-decoration:underline;text-decoration-color:#59717B;text-underline-offset:4px}
+header nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
+@media(max-width:640px){.ws-related-grid{grid-template-columns:1fr}.ws-breadcrumb{font-size:.75rem}}

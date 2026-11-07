@@ -1,0 +1,32 @@
+(()=>{'use strict';
+const host=document.querySelector('[data-ws-viewer]');if(!host)return;
+const slug=host.dataset.wsViewer;const fa=()=>document.documentElement.lang==='fa';
+fetch('/assets/data/photo-'+slug+'-v51.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('manifest');return r.json()}).then(items=>{
+ if(!Array.isArray(items)||!items.length)throw Error('empty gallery');
+ const stage=document.createElement('div');stage.className='ws-photo-stage';
+ const ctr=document.createElement('div');ctr.className='ws-photo-controls';
+ const prev=document.createElement('button'),next=document.createElement('button'),count=document.createElement('span');
+ prev.type=next.type='button';count.className='ws-photo-count';ctr.append(prev,count,next);
+ const meta=document.createElement('div');meta.className='ws-photo-meta';
+ const title=document.createElement('div');title.className='ws-photo-title';
+ const description=document.createElement('p');description.className='ws-photo-description';
+ meta.append(title,description);meta.setAttribute('aria-live','polite');meta.setAttribute('aria-atomic','true');
+ host.replaceChildren(stage,ctr,meta);
+ const render=(i,img)=>{
+  const x=items[i],f=fa(),language=f?'fa':'en';
+  prev.textContent=f?'\u0642\u0628\u0644\u06cc':'Previous';next.textContent=f?'\u0628\u0639\u062f\u06cc':'Next';
+  count.textContent=String(i+1).padStart(2,'0')+' / '+String(items.length).padStart(2,'0');
+  title.textContent=x[language]||'';
+  const note=x['description_'+language]||'';
+  description.textContent=note;description.hidden=!note;
+  meta.lang=language;meta.dir=f?'rtl':'ltr';
+  img.alt=x[f?'alt_fa':'alt_en']||title.textContent;
+ };
+ const g=WebSocialStableGallery.create(stage,items,render);
+ prev.onclick=g.prev;next.onclick=g.next;
+ let start=null;stage.addEventListener('touchstart',e=>start=e.changedTouches[0].clientX,{passive:true});
+ stage.addEventListener('touchend',e=>{if(start===null)return;const dx=e.changedTouches[0].clientX-start;start=null;if(Math.abs(dx)>45)(dx<0?g.next:g.prev)()},{passive:true});
+ host.tabIndex=0;host.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();(e.key==='ArrowRight'?g.next:g.prev)()}});
+ new MutationObserver(g.refresh).observe(document.documentElement,{attributes:true,attributeFilter:['lang','dir']});
+ stage.addEventListener('gallery-load-error',()=>{description.hidden=false;description.textContent=fa()?'\u062a\u0635\u0648\u06cc\u0631 \u0628\u0627\u0631\u06af\u0630\u0627\u0631\u06cc \u0646\u0634\u062f\u061b \u062a\u0635\u0648\u06cc\u0631 \u0642\u0628\u0644\u06cc \u062d\u0641\u0638 \u0634\u062f.':'Image unavailable; current image retained.'});
+}).catch(()=>{host.textContent=fa()?'\u06af\u0627\u0644\u0631\u06cc \u0645\u0648\u0642\u062a\u0627\u064b \u062f\u0631 \u062f\u0633\u062a\u0631\u0633 \u0646\u06cc\u0633\u062a.':'Gallery temporarily unavailable.'})})();

@@ -1,0 +1,50 @@
+/* WebSocial v3.8 — coherent editorial system. Loaded last. */
+:root{--ws-bg:#f2f5f5;--ws-ink:#192a34;--ws-muted:#526570;--ws-rule:#d6dfe1;--ws-paper:#f8fafa}
+html{scroll-padding-top:85px}
+body{font-size:15px;line-height:1.72;overflow-x:hidden}
+body p{line-height:1.75}
+.wrap{max-width:960px}
+.ws-shell-row{max-width:960px}
+.ws-shell-header{background:rgba(242,245,245,.88)}
+.ws-shell-brand{letter-spacing:.055em}
+.ws-shell-section{font-size:12px}
+.hero{padding:42px 0 27px}
+h1{font-size:clamp(2rem,3.2vw,2.8rem)!important;margin-bottom:14px}
+h2,.ws-section h2{font-size:clamp(1.3rem,2vw,1.7rem)!important}
+h3{line-height:1.48}
+.section{padding:30px 0;border-color:var(--ws-rule)}
+.entry{padding:20px 0;border-color:var(--ws-rule)}
+.entry h3{font-size:1.08rem}
+.entry p,.work-card p{font-size:.91rem}
+.entry .actions{margin-top:12px}
+.work-grid{gap:14px;margin:18px 0}
+.work-card{padding:18px;background:rgba(255,255,255,.38);border:1px solid var(--ws-rule)}
+.work-card h3{font-size:1.04rem}
+.work-card a,.entry a{text-underline-offset:4px}
+.work-card a:hover,.entry a:hover{color:#506b78}
+.book-thumb{width:88px;height:120px;margin-bottom:12px}
+.detail-grid{gap:28px}
+.detail-aside{padding:18px;border-top-width:1px}
+.ws-breadcrumb{font-size:.79rem;opacity:.78}
+.ws-breadcrumb a{text-decoration:none}
+.ws-breadcrumb a:hover{text-decoration:underline}
+.note,.asset-note{background:transparent;border-color:var(--ws-rule);font-size:.85rem}
+footer{padding:30px 0}
+@media(max-width:720px){
+ html{font-size:14px}
+ .wrap{padding-inline:19px}
+ .hero{padding:29px 0 21px}
+ .section{padding:23px 0}
+ .work-grid{grid-template-columns:1fr;gap:12px}
+ .work-card{padding:15px}
+ .entry{padding:16px 0}
+ .ws-shell-row{min-height:54px}
+ .ws-shell-brand{font-size:10px!important;max-width:49%!important}
+ .ws-shell-section{font-size:10px;max-width:20%!important}
+ .ws-shell-actions{gap:5px}
+ .book-cover-layout{gap:18px}
+}
+@media(max-width:370px){.ws-shell-section{display:none}.ws-shell-brand{max-width:63%!important}}
+/* Keep long media and editorial text within viewport. */
+main img,main video,main iframe{max-width:100%}
+main{min-width:0}

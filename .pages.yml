@@ -1,0 +1,147 @@
+# WebSocial editorial pilot: content is saved in the selected GitHub branch.
+# Do not edit confidential/raw fieldwork data in a public repository.
+media:
+  - name: carpet_media
+    label: Public-safe photos for the Tabriz carpet pilot
+    input: content/pilot/media
+    output: /assets/pilot/carpet
+    extensions: [jpg, jpeg, png, webp]
+    rename: safe
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      update: "editorial(pilot): update {filename} by {userName}"
+      create: "editorial(pilot): add {filename} by {userName}"
+content:
+  - name: carpet_pilot
+    label: "Tabriz carpet | pilot"
+    type: file
+    path: content/pilot/carpet.json
+    format: json
+    operations:
+      create: false
+      delete: false
+    fields:
+      - name: project_id
+        label: Project ID
+        type: string
+        readonly: true
+      - name: project_title_fa
+        label: Project title (Persian)
+        type: string
+        readonly: true
+      - name: editorial_note
+        label: Editorial instructions
+        type: text
+        readonly: true
+      - name: photos
+        label: Photo captions and new public photos
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{id} - {title_fa}"
+        fields:
+          - name: id
+            label: Unique photo ID (Latin letters/numbers/hyphen)
+            type: string
+            required: true
+            pattern: "^[a-z0-9][a-z0-9-]{1,69}$"
+          - name: status
+            label: Editorial status
+            type: select
+            options:
+              values:
+                - name: draft
+                  label: Draft - unpublished
+                - name: review
+                  label: For review - unpublished
+                - name: published
+                  label: Approved content (requires main-branch merge)
+          - name: src
+            label: Existing photo URL (keep for old photos)
+            type: string
+          - name: image
+            label: Upload a public photo (optional)
+            type: image
+            options:
+              media: carpet_media
+              extensions: [jpg, jpeg, png, webp]
+          - name: title_fa
+            label: Photo title (Persian)
+            type: string
+            required: true
+          - name: title_en
+            label: Photo title (English)
+            type: string
+            required: true
+          - name: description_fa
+            label: Short ethnographic description (Persian)
+            type: text
+          - name: description_en
+            label: Short ethnographic description (English)
+            type: text
+          - name: alt_fa
+            label: Image alternative text (Persian)
+            type: text
+          - name: alt_en
+            label: Image alternative text (English)
+            type: text
+      - name: notes
+        label: Public field notes and graph nodes
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{id} - {title_fa}"
+        fields:
+          - name: id
+            label: Unique note ID (Latin letters/numbers/hyphen)
+            type: string
+            required: true
+            pattern: "^[a-z0-9][a-z0-9-]{1,69}$"
+          - name: status
+            label: Editorial status
+            type: select
+            options:
+              values:
+                - name: draft
+                  label: Draft - unpublished
+                - name: review
+                  label: For review - unpublished
+                - name: published
+                  label: Approved content (requires main-branch merge)
+          - name: title_fa
+            label: Note title (Persian)
+            type: string
+            required: true
+          - name: title_en
+            label: Note title (English)
+            type: string
+            required: true
+          - name: summary_fa
+            label: Note text (Persian)
+            type: text
+            required: true
+          - name: summary_en
+            label: Note text (English)
+            type: text
+            required: true
+          - name: image
+            label: Photo (optional, must be cleared for publication)
+            type: image
+            options:
+              media: carpet_media
+              extensions: [jpg, jpeg, png, webp]
+          - name: related_node
+            label: Related existing graph node (optional)
+            type: select
+            options:
+              values:
+                - name: carpetphotos
+                  label: Tabriz carpet photo gallery
+                - name: carpet
+                  label: Tabriz carpet research

@@ -1,0 +1,15 @@
+/* WebSocial v5.6: consistent Persian typography and aligned brand emblem. */
+/* Font files are installed separately by the site owner with an appropriate web license. */
+@font-face{font-family:"WS IRANSans";src:url('/assets/fonts/IRANSans.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:"WS IRANSans";src:url('/assets/fonts/IRANSans_Light.ttf') format('truetype');font-weight:300;font-display:swap}
+@font-face{font-family:"WS IRANSans";src:url('/assets/fonts/IRANSans_UltraLight.ttf') format('truetype');font-weight:200;font-display:swap}
+@font-face{font-family:"WS IRANSans";src:url('/assets/fonts/IRANSans_Medium.ttf') format('truetype');font-weight:500 600;font-display:swap}
+@font-face{font-family:"WS IRANSans";src:url('/assets/fonts/IRANSans_Bold.ttf') format('truetype');font-weight:700 900;font-display:swap}
+html[lang="fa"] body,html[dir="rtl"] body,body[dir="rtl"],body[lang="fa"],body.fa,body.is-fa{font-family:"WS IRANSans",Tahoma,Arial,sans-serif!important}
+html[lang="fa"] :is(h1,h2,h3,h4,h5,h6,p,li,button,input,textarea,select,label,figcaption),html[dir="rtl"] :is(h1,h2,h3,h4,h5,h6,p,li,button,input,textarea,select,label,figcaption),body[dir="rtl"] :is(h1,h2,h3,h4,h5,h6,p,li,button,input,textarea,select,label,figcaption),body.fa :is(h1,h2,h3,h4,h5,h6,p,li,button,input,textarea,select,label,figcaption){font-family:"WS IRANSans",Tahoma,Arial,sans-serif!important;letter-spacing:normal}
+/* Translation nodes can remain inside an English-rooted document. */
+[data-fa]:not([data-en]),[lang="fa"],.fa-text{font-family:"WS IRANSans",Tahoma,Arial,sans-serif}
+/* Header: align emblem and wordmark on one shared flex baseline across all pages. */
+.ws-shell-header .ws-shell-brand{display:inline-flex!important;align-items:center!important;justify-content:flex-start;gap:8px!important;line-height:1.15!important;vertical-align:middle;min-height:34px}
+.ws-shell-header .ws-shell-brand .ws-brand-emblem{position:static!important;display:block!important;flex:none;width:32px!important;height:32px!important;max-width:32px;max-height:32px;object-fit:contain!important;object-position:center!important;margin:0!important;padding:0!important;transform:none!important;vertical-align:middle!important}
+@media(max-width:520px){.ws-shell-header .ws-shell-brand{gap:5px!important}.ws-shell-header .ws-shell-brand .ws-brand-emblem{width:27px!important;height:27px!important;max-width:27px}}

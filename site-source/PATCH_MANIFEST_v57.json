@@ -1,0 +1,23 @@
+{
+  "base": "WebSocial v5.6 (v5.2 full + v5.3, v5.4, v5.5, v5.6 overlays)",
+  "files": [
+    "assets/press/Shahsavan_Press_Kit_EN.pdf",
+    "assets/press/Shahsavan_Press_Kit_FA.pdf",
+    "assets/press/Shahsavan_Press_Kit_FR.pdf",
+    "assets/articles/2026-embodied-poverty-shahsavan.pdf",
+    "assets/articles/2024-goffman-intellectual-heirs.pdf",
+    "films/shahsavan/press/index.html",
+    "publications/embodied-poverty/index.html",
+    "publications/goffman-intellectual-heirs/index.html",
+    "publications/index.html",
+    "publications/goffman-island/index.html"
+  ],
+  "count": 10,
+  "assets": {
+    "assets/press/Shahsavan_Press_Kit_EN.pdf": 4.91,
+    "assets/press/Shahsavan_Press_Kit_FA.pdf": 1.4,
+    "assets/press/Shahsavan_Press_Kit_FR.pdf": 3.16,
+    "assets/articles/2026-embodied-poverty-shahsavan.pdf": 1.14,
+    "assets/articles/2024-goffman-intellectual-heirs.pdf": 1.56
+  }
+}

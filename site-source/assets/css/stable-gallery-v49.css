@@ -1,0 +1,10 @@
+/* WebSocial v4.9: visible base never fades; overlay fades on top. */
+.ws-safe-stage{position:relative;overflow:hidden}
+.ws-safe-stage .ws-safe-base,.ws-safe-stage .ws-safe-overlay{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:contain!important;display:block!important;visibility:visible!important;pointer-events:none!important}
+.ws-safe-stage .ws-safe-base{opacity:1!important;transition:none!important;z-index:1}
+.ws-safe-stage .ws-safe-overlay{opacity:0;z-index:2;will-change:opacity}
+@media(prefers-reduced-motion:reduce){.ws-safe-stage .ws-safe-overlay{transition:none!important}}
+
+/* v5.0: full-frame opaque matte behind each contained image */
+.ws-safe-stage .ws-safe-base,.ws-safe-stage .ws-safe-overlay{background-color:#e5eaeb!important;}
+.ws-safe-stage .ws-safe-overlay{backface-visibility:hidden;}

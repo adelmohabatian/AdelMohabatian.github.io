@@ -1,0 +1,33 @@
+/* WebSocial graph proof-of-concept. Public metadata only. Edit node URLs here. */
+window.WEBSOCIAL_GRAPH = {
+  nodes: [
+    {id:'hub',type:'index',title:{fa:'نقشه آثار و پژوهش‌ها',en:'Works & Research'},description:{fa:'دروازه مشاهده ارتباط میان پروژه‌های پژوهشی و خروجی‌های عمومی سایت.',en:'Explore links between fieldwork projects and their public outputs.'},url:'/research/'},
+    {id:'sh',type:'project',title:{fa:'پژوهش شاهسون',en:'Shahsavan Research'},description:{fa:'پرونده مردم‌نگاری عشایر شاهسون و پژوهش درباره فرایندهای فقیرسازی و محرومیت‌زدایی.',en:'Ethnographic research on Shahsavan nomadic livelihoods, impoverishment and deprivation.'},url:'/research/shahsavan/'},
+    {id:'carpet',type:'project',title:{fa:'پژوهش فرش تبریز',en:'Tabriz Carpet Research'},description:{fa:'کار تجسم‌یافته و دانش محلی بافندگان فرش؛ پروژه در حال انجام.',en:'Embodied labor and local knowledge of carpet weavers; ongoing research.'},url:'/research/carpet/'},
+    {id:'vaneti',type:'project',title:{fa:'وانتی‌های تبریز',en:'Tabriz Fruit Vendors'},description:{fa:'مردم‌نگاری کار و معیشت فروشندگان سیار میوه در تبریز.',en:'Ethnography of the work and livelihoods of Tabriz mobile fruit vendors.'},url:'/photography/vaneti/'},
+    {id:'workers',type:'project',title:{fa:'کارگران تبریز',en:'Tabriz Workers'},description:{fa:'پژوهش میدانی درباره کارگران ساختمانی و میدان‌های کار شهری.',en:'Fieldwork on construction workers and urban labor spaces.'},url:'/photography/workers/'},
+    {id:'culture',type:'project',title:{fa:'مسائل فرهنگی استان',en:'Cultural Issues'},description:{fa:'احصای مسائل فرهنگی استان آذربایجان شرقی؛ در حال انجام.',en:'Mapping cultural issues in East Azerbaijan Province; ongoing.'},url:'/research/cultural-issues/'},
+    {id:'film',type:'film',title:{fa:'مستند شاهسون',en:'Shahsavan Documentary'},description:{fa:'در میان عشایر ایل شاهسون؛ مستند مردم‌نگارانه ۷۲ دقیقه و ۴۴ ثانیه.',en:'Among the Shahsevan Nomads; a 72-minute, 44-second ethnographic documentary.'},url:'/films/shahsavan/'},
+    {id:'shphotos',type:'photo',title:{fa:'عکس‌های میدانی شاهسون',en:'Shahsavan Field Photos'},description:{fa:'عکس‌های مستقل عکاسی‌شده در میدان؛ متمایز از فریم‌های استخراج‌شده از فیلم.',en:'Independent field photography, distinct from documentary film stills.'},url:'/photography/shahsavan/'},
+    {id:'essay',type:'photo',title:{fa:'جستار تصویری شاهسون',en:'Shahsavan Photo Essay'},description:{fa:'روایت تصویری از زندگی روزمره و تجربه‌های مردم‌نگارانه در میدان.',en:'Visual field essay on everyday lives and ethnographic encounters.'},url:'/photography/shahsavan-essay/'},
+    {id:'stills',type:'photo',title:{fa:'تصاویر منتخب فیلم',en:'Selected Film Stills'},description:{fa:'فریم‌های منتخب از خود فیلم، در بخش رسانه‌ای؛ جدا از عکس‌های میدانی.',en:'Images captured from the film, kept distinct from standalone field photographs.'},url:'/films/shahsavan/press/'},
+    {id:'press',type:'press',title:{fa:'پرس‌کیت سه‌زبانه',en:'Trilingual Press Kit'},description:{fa:'بسته رسانه‌ای و منابع مطبوعاتی مرتبط با فیلم شاهسون.',en:'Official film press materials in three languages.'},url:'/films/shahsavan/press/'},
+    {id:'poverty',type:'article',title:{fa:'مقاله فقر بدنمند',en:'Embodied Poverty Article'},description:{fa:'تحلیل مردم‌نگارانه فقر بدنمند، طرد فضایی و خشونت زیرساختی در میدان شاهسون.',en:'Ethnographic analysis of embodied poverty, spatial exclusion and infrastructural violence.'},url:'/publications/embodied-poverty/'},
+    {id:'bureau',type:'article',title:{fa:'مقاله بوروکراسی و مقاومت',en:'Bureaucracy & Resistance'},description:{fa:'اقتصاد سیاسی کوچ‌نشینی، خشونت بوروکراتیک و مقاومت روزمره.',en:'Political economy of nomadism, bureaucratic violence and everyday resistance.'},url:'/publications/bureaucracy-resistance/'},
+    {id:'shepherd',type:'article',title:{fa:'تیپ ایده‌آل چوپان',en:'Ideal-type Shepherd'},description:{fa:'عنوان مقاله پژوهشی ثبت‌شده در رزومه؛ جزئیات نشر نیازمند تأیید است.',en:'Research article listed in the CV; publication details remain to be verified.'},url:'/publications/shahsavan-ideal-shepherd/'},
+    {id:'shbook',type:'book',title:{fa:'کتاب شاهسون',en:'Shahsavan Book'},description:{fa:'پروژه کتاب مرتبط با مردم‌نگاری شاهسون؛ وضعیت اثر در صفحه انتشارات مشخص می‌شود.',en:'Book project based on Shahsavan ethnography; check the publication page for status.'},url:'/publications/shahsavan-book/'},
+    {id:'carpetphotos',type:'photo',title:{fa:'گالری فرش',en:'Carpet Photo Gallery'},description:{fa:'عکس‌های میدان پژوهش فرش تبریز و فرایند بافت.',en:'Field images of carpet weaving and workshop practices.'},url:'/photography/carpet/'},
+    {id:'vanetiphotos',type:'photo',title:{fa:'گالری وانتی‌ها',en:'Fruit Vendors Gallery'},description:{fa:'عکس‌های مستقل از فعالیت وانتی‌های میوه‌فروش تبریز.',en:'Photographs of mobile fruit vendors in Tabriz.'},url:'/photography/vaneti/'},
+    {id:'vanetibook',type:'book',title:{fa:'کتاب اقتصاد وانتی',en:'Fruit Vendors Book'},description:{fa:'اقتصاد وانتی و ساختارهای جبرانی؛ صفحه معرفی و پیش‌نمایش کتاب.',en:'The mobile fruit economy and compensatory structures; book page and preview.'},url:'/publications/fruit-vendors/'},
+    {id:'workerphotos',type:'photo',title:{fa:'گالری کارگران',en:'Workers Photo Gallery'},description:{fa:'تصاویر میدانی مرتبط با کارگران تبریز.',en:'Field photographs associated with Tabriz workers.'},url:'/photography/workers/'},
+    {id:'greencity',type:'article',title:{fa:'مقاله شهر سبز',en:'Green City Article'},description:{fa:'مقاله ثبت‌شده در رزومه درباره میدان‌های کارگری؛ جزئیات نشر نیازمند تأیید است.',en:'CV-listed article on labor spaces; publication details pending verification.'},url:'/publications/green-city-workers/'},
+    {id:'stories',type:'story',title:{fa:'روایت‌های میدان',en:'Field Narratives'},description:{fa:'مجموعه روایت‌های صوتی و تصویری منتشرشده در بخش داستان‌های سایت.',en:'Audio-visual narratives presented in the site’s Stories section.'},url:'/stories/'}
+  ],
+  edges: [
+    {source:'hub',target:'sh'}, {source:'hub',target:'carpet'}, {source:'hub',target:'vaneti'}, {source:'hub',target:'workers'}, {source:'hub',target:'culture'}, {source:'hub',target:'stories'},
+    {source:'sh',target:'film'}, {source:'sh',target:'shphotos'}, {source:'sh',target:'poverty'}, {source:'sh',target:'bureau'}, {source:'sh',target:'shepherd'}, {source:'sh',target:'shbook'},
+    {source:'shphotos',target:'essay'}, {source:'film',target:'stills'}, {source:'film',target:'press'},
+    {source:'carpet',target:'carpetphotos'}, {source:'vaneti',target:'vanetiphotos'}, {source:'vaneti',target:'vanetibook'},
+    {source:'workers',target:'workerphotos'}, {source:'workers',target:'greencity'}
+  ]
+};

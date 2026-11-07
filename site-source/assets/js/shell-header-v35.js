@@ -1,0 +1,2 @@
+/* WebSocial v3.5 — menu behaviour; language.js owns the language switch. */
+(()=>{const menu=document.querySelector('.ws-shell-menu');if(!menu)return;document.addEventListener('pointerdown',e=>{if(!menu.contains(e.target))menu.open=false});document.addEventListener('keydown',e=>{if(e.key==='Escape')menu.open=false});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.open=false));})();

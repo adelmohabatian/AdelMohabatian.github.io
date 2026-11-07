@@ -1,0 +1,7 @@
+/* v5.3: shared header and accessible story breadcrumbs */
+.ws-episode .ws-breadcrumb{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px;color:#59717b;margin:0 0 36px;line-height:1.8}
+.ws-episode .ws-breadcrumb a{text-decoration:none;color:#455f69}
+.ws-episode .ws-breadcrumb a:hover{text-decoration:underline}
+.ws-episode .ws-breadcrumb [aria-current="page"]{color:#192a34}
+.ws-episode{margin-top:38px}
+@media(max-width:640px){.ws-episode{margin-top:26px}.ws-episode .ws-breadcrumb{margin-bottom:26px}}

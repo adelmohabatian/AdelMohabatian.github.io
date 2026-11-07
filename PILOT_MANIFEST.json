@@ -1,0 +1,54 @@
+{
+  "name": "WebSocial Online Studio Pilot v0.1",
+  "type": "GitHub repository root patch",
+  "baseline": "WebSocial v6.0 full-site ZIP",
+  "public_live_deployment": false,
+  "scope": "Tabriz carpet gallery + one note + graph link",
+  "files": [
+    {
+      "path": ".github/workflows/websocial-editorial-preview.yml",
+      "sha256": "4213deea844982bbacab9f30de0c4a4886a21514202fafc20d26a94c86758040",
+      "bytes": 1160
+    },
+    {
+      "path": ".pages.yml",
+      "sha256": "d97984ffbd74dec9a9592d8d772c89b15421e8c4dbcaa2e40f31124c123d6e84",
+      "bytes": 4674
+    },
+    {
+      "path": "COLLABORATOR_GUIDE_FA.md",
+      "sha256": "e0b585edd56c4adde62bc913ac713ab879ae92e15c8278f643dac2e4f1d774a1",
+      "bytes": 1512
+    },
+    {
+      "path": "PILOT_STATUS_FA.md",
+      "sha256": "a931cd2abd44950ebece0dd0ac4d66acd2ddea41670bf7c3efef066786186b14",
+      "bytes": 2398
+    },
+    {
+      "path": "README_FA.md",
+      "sha256": "75ce8099cb98457946b23cef2d91794a3d4ced283a7f2fdaf5d8bffbdb0a2ad7",
+      "bytes": 5603
+    },
+    {
+      "path": "RUN_LOCAL_PREVIEW_WIN10.bat",
+      "sha256": "7de7ec3c23fd2713f1a6989e7cab620401dd647dc851525ebdc0e14b1ceea553",
+      "bytes": 824
+    },
+    {
+      "path": "content/pilot/carpet.json",
+      "sha256": "d0329ba7055debd323531d63c2c29b5db008b3d190e6bb5483909749bbedb12d",
+      "bytes": 1607
+    },
+    {
+      "path": "content/pilot/media/.gitkeep",
+      "sha256": "0e25c8cc29389baa4952def1836a3a162d6d4b7716ad2043dfbd91070249e466",
+      "bytes": 54
+    },
+    {
+      "path": "tools/websocial_online_pilot_builder.py",
+      "sha256": "174a13e02a632bf9392a3e49da023dd7b66501e1c5a660e2028339d1c1adb9c4",
+      "bytes": 16049
+    }
+  ]
+}

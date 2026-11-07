@@ -1,0 +1,22 @@
+/* WebSocial v3.5 — unified, single-row frosted navigation */
+.ws-shell-header{position:sticky;top:0;z-index:1100;width:100%;background:rgba(242,245,245,.88);-webkit-backdrop-filter:blur(16px) saturate(125%);backdrop-filter:blur(16px) saturate(125%);border-bottom:1px solid rgba(104,126,137,.25);color:#192a34;box-shadow:0 2px 14px rgba(25,42,52,.035);direction:ltr;isolation:isolate}
+.ws-shell-header *{box-sizing:border-box}
+.ws-shell-row{max-width:1050px;width:calc(100% - 40px);min-height:60px;margin-inline:auto;display:flex;flex-flow:row nowrap;align-items:center;gap:16px;padding:8px 0}
+.ws-shell-brand{color:#192a34;text-decoration:none;white-space:nowrap;font-family:system-ui,sans-serif;font-size:12px;font-weight:750;letter-spacing:.07em;line-height:1.2;flex:0 1 auto}
+.ws-shell-section{font-family:system-ui,Tahoma,sans-serif;font-size:12px;font-weight:500;color:#526570;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:auto;min-width:0;max-width:155px;line-height:1.4;direction:auto;text-align:end}
+.ws-shell-actions{display:flex;flex:0 0 auto;align-items:center;gap:8px;direction:ltr}
+.ws-shell-menu{position:relative;display:block}
+.ws-shell-menu summary{list-style:none;display:flex;align-items:center;justify-content:center;cursor:pointer;min-width:40px;min-height:36px;padding:6px 8px;border:1px solid #cbd5d9;border-radius:3px;background:transparent;color:#192a34;font:500 12px/1 system-ui,sans-serif}
+.ws-shell-menu summary::-webkit-details-marker{display:none}
+.ws-shell-lang{display:inline-flex;align-items:center;justify-content:center;min-width:38px;min-height:36px;padding:6px 8px;border:1px solid #cbd5d9;border-radius:3px;background:transparent;color:#192a34;cursor:pointer;font:500 12px/1 system-ui,sans-serif}
+.ws-shell-panel{display:none;position:absolute;top:calc(100% + 10px);right:0;min-width:205px;max-width:calc(100vw - 24px);padding:8px 15px;background:#f2f5f5;border:1px solid #cbd5d9;box-shadow:0 12px 28px rgba(25,42,52,.12);border-radius:3px}
+.ws-shell-menu[open] .ws-shell-panel{display:block}
+.ws-shell-panel a{display:block;padding:10px 0;border-bottom:1px solid #d8e0e2;color:#192a34;text-decoration:none;font:500 13px/1.5 system-ui,Tahoma,sans-serif;white-space:nowrap}
+.ws-shell-panel a:last-child{border-bottom:0}
+.ws-shell-panel a[aria-current=page]{font-weight:750}
+html[dir=rtl] .ws-shell-panel{text-align:right;direction:rtl}
+@media(min-width:850px){.ws-shell-row{min-height:64px}.ws-shell-brand{font-size:13px}.ws-shell-section{font-size:13px;max-width:240px}.ws-shell-menu summary{min-width:58px}}
+@media(max-width:520px){.ws-shell-row{width:calc(100% - 28px);min-height:54px;gap:7px;padding:7px 0}.ws-shell-brand{font-size:clamp(9px,2.7vw,12px);letter-spacing:.025em;max-width:45%;overflow:hidden;text-overflow:ellipsis}.ws-shell-section{font-size:clamp(10px,2.7vw,12px);max-width:26%;}.ws-shell-actions{gap:5px}.ws-shell-menu summary,.ws-shell-lang{min-width:34px;min-height:32px;padding:5px 6px;font-size:11px}}
+@media(max-width:360px){.ws-shell-brand{max-width:43%}.ws-shell-section{max-width:22%}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.ws-shell-header{background:rgba(242,245,245,.97)}}
+@media(prefers-reduced-transparency:reduce){.ws-shell-header{background:#f2f5f5;backdrop-filter:none;-webkit-backdrop-filter:none}}

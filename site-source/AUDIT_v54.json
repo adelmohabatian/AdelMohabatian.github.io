@@ -1,0 +1,194 @@
+{
+  "pages": [
+    {
+      "page": "about/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "contact/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "films/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "films/shahsavan/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "films/shahsavan/press/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "photography/carpet/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "photography/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "photography/shahsavan/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "photography/shahsavan-essay/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "photography/vaneti/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "photography/workers/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "publications/bureaucracy-resistance/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "publications/embodied-poverty/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "publications/fruit-vendors/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "publications/goffman-island/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "publications/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "publications/shahsavan-book/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "research/shahsavan/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": true
+    },
+    {
+      "page": "stories/first-video/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": false
+    },
+    {
+      "page": "stories/index.html",
+      "has_navigation": true,
+      "stories_in_navigation": true,
+      "has_breadcrumb_or_home_exemption": true,
+      "language_script": true,
+      "social_footer_script": true,
+      "page_footer": false
+    }
+  ],
+  "missing_local_paths": []
+}

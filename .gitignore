@@ -1,0 +1,15 @@
+# Extracted deployment files
+/releases/site/
+/releases/site-source/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+*.tmp
+*.bak
+
+# Local secrets
+.env
+.env.*

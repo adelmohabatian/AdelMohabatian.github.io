@@ -1,0 +1,62 @@
+{
+  "version": "5.8",
+  "patchKind": "site-only",
+  "compatibility": "v5.7 site source",
+  "files": [
+    {
+      "path": "README_v58_FA.txt",
+      "bytes": 923,
+      "sha256": "dc4d1a226682d729882d3c28fd1687f0a7b0f70d9fbc84a4d1500fd5bab08d6f"
+    },
+    {
+      "path": "assets/css/gallery-captions-v58.css",
+      "bytes": 1273,
+      "sha256": "2977ed233783e1c577a212c61b33132a025aeab0d3b19c5d90fd3f92697e0165"
+    },
+    {
+      "path": "assets/data/photo-film-stills-v51.json",
+      "bytes": 5831,
+      "sha256": "5147b9a36a4a8401689cfa38a6a12e3befd2b29a86f90f010af1945821a95cd5"
+    },
+    {
+      "path": "assets/js/film-viewer-v58.js",
+      "bytes": 2729,
+      "sha256": "5396c8f5d6aec172691f7e31cf837f3ff99990a99f7fd85c6a344689faa113da"
+    },
+    {
+      "path": "assets/js/photography-project-v58.js",
+      "bytes": 2894,
+      "sha256": "ec8bd93f01c186b51feb190229b63b341dc71acb0770146c824ac0e2007d4f0f"
+    },
+    {
+      "path": "films/shahsavan/press/index.html",
+      "bytes": 10115,
+      "sha256": "47dc7863159df7edeeebf2b1d8f120ad196b7345d5a59b183e63a20dd6f58f58"
+    },
+    {
+      "path": "photography/carpet/index.html",
+      "bytes": 4872,
+      "sha256": "ed132e915cad72a56d1cf8ba192cf79ddb7686c84af8e3cff280ea0f7680c5bc"
+    },
+    {
+      "path": "photography/shahsavan/index.html",
+      "bytes": 4942,
+      "sha256": "5437aec309b8c161f40ab219e279abd89d4edc59e6e68d97a7ff41f45dd71758"
+    },
+    {
+      "path": "photography/vaneti/index.html",
+      "bytes": 4947,
+      "sha256": "9cff0448139eb0a70ca54caa0ff5789a94e5353b521085af8688a36f67ba9fed"
+    },
+    {
+      "path": "photography/workers/index.html",
+      "bytes": 4797,
+      "sha256": "77a15adc6400a237c9182750f01680e93eb8024d491e03a1e8e66168cbc6484c"
+    }
+  ],
+  "notes": [
+    "No original gallery photos or v49 stable engine changed",
+    "Four fieldwork galleries plus film-stills gallery",
+    "No actual photo descriptions invented"
+  ]
+}
