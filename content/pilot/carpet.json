@@ -7,11 +7,8 @@
       "id": "carpet-001",
       "status": "draft",
       "src": "/assets/photography/carpet/carpet-001.webp",
-      "image": "",
       "title_fa": "تصویر ۰۱ از پژوهش میدانی فرش تبریز",
       "title_en": "Tabriz carpet fieldwork image 01",
-      "description_fa": "",
-      "description_en": "",
       "alt_fa": "تصویر میدانی پژوهش فرش تبریز",
       "alt_en": "Tabriz carpet fieldwork photograph"
     }
@@ -22,9 +19,8 @@
       "status": "draft",
       "title_fa": "یادداشت آزمایشی پنل پژوهش فرش تبریز",
       "title_en": "Tabriz Carpet CMS Pilot Note",
-      "summary_fa": "این یک متن آزمایشی برای بررسی اتصال پنل آنلاین، صفحه پژوهش و گراف است و داده یا یافته میدانی محسوب نمی‌شود.",
+      "summary_fa": "این یک نوشته متن آزمایشی برای بررسی اتصال پنل آنلاین، صفحه پژوهش و گراف است و داده یا یافته میدانی محسوب نمی‌شود.",
       "summary_en": "This is a test of the online editor, research page and graph integration; it is not field evidence or a research finding.",
-      "image": "",
       "related_node": "carpetphotos"
     }
   ]
